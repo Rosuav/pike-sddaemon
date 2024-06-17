@@ -7,6 +7,15 @@
 DECLARATIONS
 
 PIKEFUN int sd_booted() {
-	pop_n_elems(args);
-	push_int(sd_booted());
+	RETURN sd_booted();
+}
+
+PIKEFUN int sd_notify(string(8bit) state) {
+	RETURN sd_notify(0, state->str);
+}
+
+PIKEFUN int sd_notify(mapping state) {
+	//TODO: Build a string from the mapping
+	// (["READY": 1, "STATUS": "Stuff happening"]) --> "READY=1\nSTATUS=Stuff happening"
+	RETURN sd_notify(0, "");
 }
