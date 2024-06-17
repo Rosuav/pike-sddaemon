@@ -28,3 +28,7 @@ PIKEFUN int sd_notify_reloading() {
 PIKEFUN int sd_notify_ready() {
 	RETURN sd_notify(0, "READY=1");
 }
+
+PIKEFUN int sd_listen_fds() {
+	RETURN sd_listen_fds(1);
+}
