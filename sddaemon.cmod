@@ -19,3 +19,12 @@ PIKEFUN int sd_notify(mapping state) {
 	// (["READY": 1, "STATUS": "Stuff happening"]) --> "READY=1\nSTATUS=Stuff happening"
 	RETURN sd_notify(0, "");
 }
+
+PIKEFUN int sd_notify_reloading() {
+	//TODO: sd_notify("RELOADING=1\nMONOTONIC_USEC=%ld");
+	RETURN 0;
+}
+
+PIKEFUN int sd_notify_ready() {
+	RETURN sd_notify(0, "READY=1");
+}
