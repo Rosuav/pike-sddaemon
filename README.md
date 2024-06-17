@@ -2,7 +2,6 @@ Pike sd-daemon bindings
 =======================
 
 TODO:
-* sd_booted
 * sd_notify
   - Simple string, pass it as-is
   - Mapping. Build the string.

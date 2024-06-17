@@ -2,11 +2,11 @@
 #include "interpret.h"
 #include "module.h"
 #include "array.h"
+#include <systemd/sd-daemon.h>
 
 DECLARATIONS
 
 PIKEFUN int sd_booted() {
-	//hack
-	push_int(1);
 	pop_n_elems(args);
+	push_int(sd_booted());
 }
