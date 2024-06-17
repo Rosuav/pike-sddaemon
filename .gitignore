@@ -1,0 +1,15 @@
+config*
+!configure.in
+dependencies
+linker_options
+Makefile
+make_variables
+modlist_segment
+module.so
+sddaemon.c
+sddaemon.o
+propagated_variables
+testsuite
+autom4te.cache
+stamp-h
+remake

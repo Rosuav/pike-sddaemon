@@ -1,0 +1,15 @@
+#include "global.h"
+#include "interpret.h"
+#include "module.h"
+#include "array.h"
+
+DECLARATIONS
+
+PIKECLASS sddaemon
+{
+	PIKEFUN int sd_booted() {
+		//hack
+		push_int(1);
+		pop_n_elems(args);
+	}
+}

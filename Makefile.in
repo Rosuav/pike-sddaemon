@@ -1,0 +1,15 @@
+@make_variables@
+VPATH=@srcdir@
+OBJS=sddaemon.o
+AUTODOC_SRC_IN=
+MODDIR=Public.pmod/
+MODNAME=sddaemon
+MODULE_NAME=Public.sddaemon
+MODULE_DIR_NAME=Public_sddaemon
+MODULE_LICENSE=MIT
+MODULE_PMOD_IN=
+MODULE_LDFLAGS=@LDFLAGS@ @LIBS@
+CONFIG_HEADERS=@CONFIG_HEADERS@
+@dynamic_module_makefile@
+@dependencies@
+
